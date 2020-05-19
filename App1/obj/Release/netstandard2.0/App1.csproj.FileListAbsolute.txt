@@ -1,0 +1,15 @@
+D:\source\repos\App1\App1\bin\Release\netstandard2.0\App1.deps.json
+D:\source\repos\App1\App1\bin\Release\netstandard2.0\App1.dll
+D:\source\repos\App1\App1\bin\Release\netstandard2.0\ref\App1.dll
+D:\source\repos\App1\App1\bin\Release\netstandard2.0\App1.pdb
+D:\source\repos\App1\App1\obj\Release\netstandard2.0\App.xaml.g.cs
+D:\source\repos\App1\App1\obj\Release\netstandard2.0\Login_Page.xaml.g.cs
+D:\source\repos\App1\App1\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+D:\source\repos\App1\App1\obj\Release\netstandard2.0\NV1.xaml.g.cs
+D:\source\repos\App1\App1\obj\Release\netstandard2.0\App1.csproj.CoreCompileInputs.cache
+D:\source\repos\App1\App1\obj\Release\netstandard2.0\App1.AssemblyInfoInputs.cache
+D:\source\repos\App1\App1\obj\Release\netstandard2.0\App1.AssemblyInfo.cs
+D:\source\repos\App1\App1\obj\Release\netstandard2.0\XamlC.stamp
+D:\source\repos\App1\App1\obj\Release\netstandard2.0\App1.dll
+D:\source\repos\App1\App1\obj\Release\netstandard2.0\ref\App1.dll
+D:\source\repos\App1\App1\obj\Release\netstandard2.0\App1.pdb

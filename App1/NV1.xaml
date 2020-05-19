@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:NV_1="clr-namespace:App1"
+             
+             x:Class="App1.NV1">
+    <ScrollView>
+        <Grid ColumnSpacing="10" RowSpacing="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height = "{x:Static NV_1:MainPage.height}" />
+                <RowDefinition Height = "{x:Static NV_1:MainPage.height}" />
+                <RowDefinition Height = "{x:Static NV_1:MainPage.height}" />
+                <RowDefinition Height = "{x:Static NV_1:MainPage.height}" />
+            </Grid.RowDefinitions>
+            <BoxView Color="DarkGray" Grid.Column="0" Grid.Row="0" />
+            <BoxView Color="DarkGray" Grid.Column="1" Grid.Row="0" />
+
+            <BoxView Color="DarkGray" Grid.Column="0" Grid.Row="1" />
+            <BoxView Color="DarkGray" Grid.Column="1" Grid.Row="1" />
+
+            <BoxView Color="DarkGray" Grid.Column="0" Grid.Row="2" />
+            <BoxView Color="DarkGray" Grid.Column="1" Grid.Row="2" />
+
+            <BoxView Color="DarkGray" Grid.Column="0" Grid.Row="3" />
+            <BoxView Color="DarkGray" Grid.Column="1" Grid.Row="3" />
+
+            <Button x:Name="button_refresh" Clicked="button_refresh_Clicked" BackgroundColor="Gray" Text="Обновить" HorizontalOptions="Fill" VerticalOptions="Fill"  Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"/>
+
+            <Picker x:Name="picker1" SelectedIndexChanged="picker1_SelectedIndexChanged" Opacity="0.0" HorizontalOptions="Fill" VerticalOptions="Fill" Title="Ваша оценка:" Visual="Material" Grid.Column="0" Grid.Row="1">
+                <Picker.Items>
+                    <x:String>1 балл</x:String>
+                    <x:String>2 балла</x:String>
+                    <x:String>3 балла</x:String>
+                    <x:String>4 балла</x:String>
+                    <x:String>5 баллов</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label x:Name="label01" HorizontalOptions="Center" VerticalOptions="Start" TextColor="Black" Text="Чистота пола" Grid.Column="0" Grid.Row="1" />
+            <Label x:Name="label11" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Green" Text="Нет данных" FontSize="Large" Grid.Column="1" Grid.Row="1" />
+            
+            <Picker x:Name="picker2" SelectedIndexChanged="picker2_SelectedIndexChanged" Opacity="0.0" HorizontalOptions="Fill" VerticalOptions="Fill" Title="Ваша оценка:" Visual="Material" Grid.Column="0" Grid.Row="2">
+                <Picker.Items>
+                    <x:String>1 балл</x:String>
+                    <x:String>2 балла</x:String>
+                    <x:String>3 балла</x:String>
+                    <x:String>4 балла</x:String>
+                    <x:String>5 баллов</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label x:Name="label02" HorizontalOptions="Center" VerticalOptions="Start" TextColor="Black" Text="Улыбка кассира" Grid.Column="0" Grid.Row="2" />
+            <Label x:Name="label12" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Green" Text="Нет данных" FontSize="Large" Grid.Column="1" Grid.Row="2" />
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

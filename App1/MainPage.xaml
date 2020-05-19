@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+
+    <ScrollView>            
+            <Grid ColumnSpacing="1" RowSpacing="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height = "{x:Static local:MainPage.height}" />
+                <RowDefinition Height = "{x:Static local:MainPage.height}" />
+                <RowDefinition Height = "{x:Static local:MainPage.height}" />
+                <RowDefinition Height = "{x:Static local:MainPage.height}" />
+            </Grid.RowDefinitions>
+            <BoxView Color="DarkGray" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" />
+
+            <BoxView Color="DarkGray" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" />
+
+            <BoxView Color="DarkGray" Grid.Column="0" Grid.Row="2" />
+            <BoxView Color="DarkGray" Grid.Column="1" Grid.Row="2" />
+
+            <BoxView Color="DarkGray" Grid.Column="0" Grid.Row="3" />
+            <BoxView Color="DarkGray" Grid.Column="1" Grid.Row="3" />
+
+            <Button x:Name="button_login" Clicked="button_login_Clicked" BackgroundColor="Gray" Text="Авторизация" HorizontalOptions="Fill" VerticalOptions="Fill"  Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"/>
+
+            <Button x:Name="button_refresh" Clicked="button_refresh_Clicked" BackgroundColor="Gray" Text="Обновить" HorizontalOptions="Fill" VerticalOptions="Fill"  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
+
+            <Button x:Name="button1" Clicked="Button1_Click" BackgroundColor="Gray" BorderColor="AliceBlue" Text="Новый Век - 1" HorizontalOptions="Fill" VerticalOptions="Fill"  Grid.Column="0" Grid.Row="2" />
+            <Label x:Name="label1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Green" Text="0" FontSize="Large" Grid.Column="1" Grid.Row="2" />
+
+            <Button x:Name="button2" Clicked="button2_Clicked" BackgroundColor="Gray" BorderColor="AliceBlue" Text="Новый Век - 2" HorizontalOptions="Fill" VerticalOptions="Fill"  Grid.Column="0" Grid.Row="3" />
+            <Label x:Name="label2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Green" Text="0" FontSize="Large" Grid.Column="1" Grid.Row="3" />
+        </Grid>
+    </ScrollView>
+    
+</ContentPage>
