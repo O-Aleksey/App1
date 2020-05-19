@@ -15,7 +15,7 @@ namespace App1
         public static double height = 50;
         string date;
         Label[] labels = new Label[3];
-        public string connection_String = @"Data Source = 192.168.1.10, 1433; Initial Catalog = testbd; Persist Security Info=True;User ID = sa; Password=321";
+        public string connection_String = @"Data Source = 192.168.1.10, 1433; Initial Catalog = testbd; Persist Security Info=True;User ID = sa; Password=321"; // Строка подключения к SQL
         NumberFormatInfo nfi = new CultureInfo("en-US", false).NumberFormat;
         public MainPage()
         {
@@ -142,7 +142,7 @@ namespace App1
             }
         }
 
-        public void ConnectWithDB()
+        public void ConnectWithDB() // Не задействованый метод для примера работы с SQL
         {
             // Строка подключения к SQL
             string connectionString = connection_String;
